@@ -1,0 +1,3 @@
+The application implements Java's new switch statement, which  requires JavaFX 17 or later.
+JavaFX 17 or later is required to run the application. The application uses features that are not available in
+earlier JDK versions.

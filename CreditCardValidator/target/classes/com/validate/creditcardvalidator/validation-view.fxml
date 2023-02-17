@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="607.0" style="-fx-background-radius: 15px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.validate.creditcardvalidator.CreditCardValidatorController">
+   <children>
+      <ImageView fitHeight="490.0" fitWidth="607.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/image1.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="338.0" styleClass="header" stylesheets="@../../../styles/creditstyle.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Credit Card Validator" textAlignment="CENTER" textFill="#fcfcfc">
+               <font>
+                  <Font name="Georgia Pro Cond Semibold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox fx:id="creditCard_Vbox" layoutX="79.0" layoutY="71.0" prefHeight="303.0" prefWidth="446.0" styleClass="card" stylesheets="@../../../styles/creditstyle.css">
+         <children>
+            <Label fx:id="cardNameLabel" alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="409.0" styleClass="display-font" text="Card Name" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="12.0" top="45.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="31.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets right="370.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../images/chip2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="42.0" prefWidth="415.0">
+               <children>
+                  <TextField fx:id="cardNumber_tf" onInputMethodTextChanged="#linkToTextField" prefHeight="43.0" prefWidth="233.0" promptText="0000-0000-0000-0000">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="card-number" />
+                        <String fx:value="prompt-text" />
+                     </styleClass>
+                  </TextField>
+                  <Label fx:id="resultLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="26.0" prefWidth="139.0" textAlignment="RIGHT" textFill="#f40ea4">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <Label alignment="TOP_LEFT" prefHeight="2.0" prefWidth="170.0" styleClass="card-number" text="Valid Thru" textFill="WHITE">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="2.0" prefWidth="170.0" text="05/05" textFill="WHITE">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Georgia Pro" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="4.0" prefWidth="406.0">
+               <children>
+                  <Label fx:id="cardholderLabel" prefHeight="30.0" prefWidth="326.0" styleClass="display-font" text="Amber Avanc">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Georgia Pro Cond Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <StackPane fx:id="creditCardStackPane" prefHeight="18.0" prefWidth="10.0">
+                     <children>
+                        <ImageView fx:id="american_express" fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../../../../../../FXCreditCardValidator/src/main/resources/images/icons8_american_express_48px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="mastercard" fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../../images/icons8_mastercard_48px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="visa" fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../../../../../../FXCreditCardValidator/src/main/resources/images/icons8-visa-48.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="discover" fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../../../../../../FXCreditCardValidator/src/main/resources/images/icons8_discover_48px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+               <VBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="clearButton" layoutX="86.0" layoutY="394.0" mnemonicParsing="false" onAction="#clearInput" prefHeight="46.0" prefWidth="225.0" stylesheets="@../../../styles/creditstyle.css" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Georgia Pro Semibold Italic" size="2.0" />
+         </font>
+      </Button>
+      <Button fx:id="validateButton" layoutX="311.0" layoutY="394.0" mnemonicParsing="false" onAction="#validateCardInput" prefHeight="46.0" prefWidth="206.0" styleClass="button2" stylesheets="@../../../styles/creditstyle.css" text="Validate" textFill="WHITE">
+         <font>
+            <Font name="Georgia Pro Semibold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

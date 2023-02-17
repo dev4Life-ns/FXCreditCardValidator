@@ -1,0 +1,50 @@
+
+.header{
+    -fx-background-color: #571b73;
+    -fx-text-fill: white;
+    -fx-background-radius: 0 0 0 20px;
+}
+
+.button {
+    -fx-background-color: #571b73;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Georgia Pro Semibold Italic";
+    -fx-background-radius: 0 0 0 15px;
+}
+
+.prompt-text{
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.button2{
+    -fx-background-color: #332e35;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0 0 15px 0;
+}
+.card{
+    -fx-background-image: url('../images/card2.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.display-font{
+    -fx-font-family: "Georgia Pro Light";
+    -fx-text-fill: white;
+}
+
+.card-number{
+    -fx-font-family: "Georgia Pro Light Bold";
+    -fx-text-fill: white;
+}
