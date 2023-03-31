@@ -10,3 +10,6 @@ this algorithm does not detect certain digit permutations.
 - Auto display credit name and type
 - Translation Animation at Y-axis
 - Screenshot's included
+
+### :camera: Screen Shots
+ 
