@@ -11,5 +11,5 @@ this algorithm does not detect certain digit permutations.
 - Translation Animation at Y-axis
 - Screenshot's included
 
-### :camera: Screen Shots
+### :camera: Screenshot
  
