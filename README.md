@@ -14,13 +14,7 @@ this algorithm does not detect certain digit permutations.
 - Screenshot's included
 ***
 
-### :camera: Screenshot
 
-<section>
-
-![valid_discover](https://user-images.githubusercontent.com/81055110/229216931-98cba20f-d9fc-4b80-b530-152991d0bb74.png)
-
-</section>
 
 
  
